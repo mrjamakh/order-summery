@@ -1,0 +1,93 @@
+@import url();
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+:root {
+    --color-pale-blue: hsl(225, 100%, 94%);
+    --color-bright-blue: hsl(245, 75%, 52%);
+    --color-very-pale-blue: hsl(225, 100%, 98%);
+    --color-des-blue: hsl(224, 23%, 55%);
+    --color-dark-blue: hsl(223, 47%, 23%);
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-pale-blue) url('images/pattern-background-desktop.svg') no-repeat top center/contain;
+}
+
+.card {
+    background-color: white;
+    width: 300px;
+    border-radius: 8px;
+}
+
+.card-top {
+    width: 100%;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.card-body {
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.card-body h2 {
+    margin-bottom: 10px;
+}
+
+.card-body p {
+    font-size: 14px;
+    color: var(--color-des-blue);
+}
+.plan {
+    background-color: var(--color-very-pale-blue);
+    height: 50px;
+    border-radius: 8px;
+    margin-top: 15px;
+    display: flex;
+    align-items:center ;
+    justify-content: space-between;
+    padding: 0px 15px;
+}
+.box-1 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.box-1 img  {
+    width: 30px;
+}
+.box-1 p {
+    font-size: 10px;
+}
+.card-body .change-plan {
+    color: var(--color-bright-blue);
+    font-weight: 700;
+    font-size: 12px;
+    text-decoration: underline;
+}
+.card .btn-payment {
+    margin-top: 15px;
+    border-radius: 4px;
+    background-color: var(--color-bright-blue);
+    color: white;
+    width: 100%;
+    border: none;
+    padding: 10px;
+}
+
+.card .btn-cancel {
+    background-color: transparent;
+    border: none;
+    margin-top: 15px;
+    color: var(--color-des-blue);
+    font-weight: 700;
+}
